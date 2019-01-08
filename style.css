@@ -1,0 +1,168 @@
+/*
+Theme Name: Cambodia
+Theme URI: http://www.qwick.info/
+Description: My 6th or 7th attempt to make a website to WordPress, finally got it to work. The theme itself does not have anything to do 
+             with the country. I'm naming my themes from places.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Author: Robbie Thomas
+Author URI: http://www.qwick.info
+Tags: right-sidebar, box, gray, header, footer, flexible-header;
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+  position: absolute;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  top: -10px;
+  left: -1px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-shadow: 0 3px 3px rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  background-color: #778899;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: #000207;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-family: 'Maven Pro', 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;	
+}
+
+
+.leftfield {
+   float: left;
+}
+
+.rightfield {
+   float: right;
+}
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  text-shadow: none;
+  padding: 10px 0;
+  margin: 20px 0 0;
+  background-color: #e5edf9;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+  
+  }
+
+nav li {
+  display: inline-block;
+  width: 14%;
+  font-size: 24px;
+    -webkit-flex-wrap: wrap;
+}
+
+nav a, nav a:visited {
+  color: #006600;
+  transition: color 1.5s ease;
+}
+
+nav a.selected, nav a:hover {
+  color: #000000;
+}
+
+
+/*******************************
+SECTION
+*******************************/
+
+body {
+  background-color: #f1f1f1;
+}
+
+section {
+  max-width: 95%;
+}
+
+
+.column-one {
+  margin-top: 130px;
+  width: 75%;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.column-two {
+  margin-top: 130px;
+  width: 25%;
+  float: right;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.box {
+  border-color: black;
+  border-style: solid;
+  max-width: 85%;
+  box-shadow: 5px 10px 8px 10px #888888;
+  padding: 20px;
+  text-align: left;
+}
+
+.sidebar-box {
+  border-color: black;
+  border-style: solid;
+  max-width: 25%;
+  box-shadow: 5px 10px 8px 10px #888888;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+/*****************************
+MEDIA QUERIES
+*****************************/
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .column-one, .column-two {
+    margin-top: 165px;
+    width: 100%;
+  }
+}
